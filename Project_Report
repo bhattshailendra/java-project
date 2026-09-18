@@ -1,0 +1,301 @@
+PROJECT REPORT
+VEHICLE RENTAL SYSTEM
+1. ABSTRACT
+
+The Vehicle Rental System is a Java-based console application designed to manage vehicles, customers, rentals, returns, billing, and rental history.
+
+The project is developed using Object-Oriented Programming (OOP) concepts such as classes, objects, constructors, inheritance, method overriding, polymorphism, composition, and collections. It also uses file handling to save and load data from text files.
+
+The system provides a simple menu-driven interface that allows users to add, display, search, and remove vehicles, manage customers, rent and return vehicles, calculate rental bills, and maintain rental history.
+
+2. INTRODUCTION
+
+Vehicle rental businesses need to maintain information about vehicles, customers, rental duration, availability, billing, and rental history.
+
+The Vehicle Rental System provides a simple computerized solution for managing these operations. The application is developed in Java and uses different classes to represent vehicles, customers, and rentals.
+
+The system supports different types of vehicles, such as cars and bikes, using inheritance and polymorphism. Data can also be stored in text files so that information can be loaded when the application starts and saved when required.
+
+3. OBJECTIVES
+
+The main objectives of the project are:
+
+To manage vehicle information efficiently.
+To support different types of vehicles.
+To add and search customer records.
+To provide vehicle rental and return functionality.
+To calculate rental bills.
+To maintain rental history.
+To save and load data using text files.
+To demonstrate important Java OOP concepts.
+To provide a simple menu-driven interface.
+To implement basic input validation.
+
+
+4. FEATURES
+
+The major features of the Vehicle Rental System are:
+
+Add vehicles.
+Display available vehicles.
+Search for vehicles.
+Remove vehicles.
+Support for cars, bikes, and other vehicles.
+Add customers.
+Search customers.
+Rent vehicles.
+Return vehicles.
+Calculate rental bills.
+Maintain rental history.
+Save and load data using text files.
+Menu-driven interaction.
+Basic input validation.
+
+5. TECHNOLOGIES USED
+
+The project is developed using the following technologies and concepts:
+
+Programming Language:
+Java
+
+Concepts Used:
+
+Classes and Objects
+Constructors
+Methods
+Inheritance
+Method Overriding
+Polymorphism
+Object Composition
+ArrayList / Collections
+File Handling
+Exception Handling 
+
+
+6.PROJECT STRUCTURE
+
+The project contains the following files:
+Vehicle Rental System
+│
+├── Main.java
+├── Vehicle.java
+├── Car.java
+├── Bike.java
+├── Customer.java
+├── Rental.java
+│
+├── vehicles.txt
+├── customers.txt
+└── rentals.txt
+These files represent the main classes and data files used by the application.
+
+7. DESCRIPTION OF MAIN CLASSES
+7.1 Vehicle Class
+
+The Vehicle class is the base class for vehicles.
+
+It stores:
+
+Vehicle ID
+Brand
+Model
+Rent per day
+Availability status
+
+It provides the basic properties and operations required for vehicles.
+
+7.2 Car Class
+
+The Car class extends the Vehicle class.
+
+In addition to the properties inherited from Vehicle, it stores the number of seats.
+
+This class demonstrates the concept of inheritance.
+
+7.3 Bike Class
+
+The Bike class also extends the Vehicle class.
+
+It adds engine capacity in CC as an additional property.
+
+This allows bikes to have their own specific information while sharing common vehicle properties.
+
+7.4 Customer Class
+
+The Customer class stores information about customers.
+
+It contains:
+
+Customer ID
+Customer name
+Phone number
+
+This class is used to maintain customer records.
+
+7.5 Rental Class
+
+The Rental class connects a customer with a vehicle.
+
+It stores the rental duration and calculates the total rental bill.
+
+It demonstrates object composition because it contains references to both Customer and Vehicle.
+
+7.6 Main Class
+
+The Main class controls the overall application flow.
+
+It contains:
+
+ArrayLists
+Menu system
+Vehicle operations
+Customer operations
+Rental operations
+Searching
+Vehicle removal
+File handling
+
+It acts as the main entry point of the application.
+
+8. OOP CONCEPTS USED
+Encapsulation
+
+Encapsulation means grouping data and related operations inside classes.
+
+In this project, vehicle, customer, and rental information is organized into separate classes.
+
+Inheritance
+
+Inheritance allows one class to acquire properties and methods from another class.
+
+In this project:
+Vehicle
+   ├── Car
+   └── Bike
+Both Car and Bike extend the Vehicle class.
+
+Polymorphism
+
+Polymorphism allows a Vehicle reference to refer to different types of vehicles such as Car and Bike.
+
+The overridden displayVehicle() methods can be invoked at runtime depending on the actual object type.
+
+Composition
+
+Composition is used in the Rental class.
+
+A rental contains references to both a Customer and a Vehicle.
+
+These concepts are specifically demonstrated in the project implementation.
+
+9. ARRAYLIST / COLLECTIONS
+
+The project uses ArrayList to store collections of vehicles, customers, and rentals.
+
+ArrayList allows the application to dynamically store and manage multiple objects.
+
+It makes operations such as adding, searching, displaying, and removing objects easier to implement.
+
+10. FILE HANDLING
+
+The application uses text files for storing data.
+
+The three files used are:
+vehicles.txt
+customers.txt
+rentals.txtVehicle information is stored in vehicles.txt, customer information is stored in customers.txt, and rental information is stored in rentals.txt.
+
+The application loads data when it starts and provides an option to save data through the application.
+
+11. APPLICATION MENU
+
+The application provides the following menu:
+
+1. Display Vehicles
+2. Add Vehicle
+3. Search Vehicle
+4. Remove Vehicle
+5. Add Customer
+6. Search Customer
+7. Rent Vehicle
+8. Return Vehicle
+9. Rental History
+10. Save Data
+11. Exit
+
+The user can select an option by entering its corresponding number.
+
+12. WORKING OF THE SYSTEM
+
+The working process of the system is as follows:
+
+The application starts through Main.java.
+Existing data can be loaded from the text files.
+The user is shown the main menu.
+The user can display, add, search, or remove vehicles.
+Customers can be added and searched.
+A customer can rent an available vehicle.
+The rental duration is recorded.
+The total rental bill is calculated.
+The vehicle can be returned after the rental.
+Rental history can be viewed.
+Updated information can be saved into the text files.
+The user can exit the application.
+13. HOW TO RUN THE PROJECT
+
+The project can be run using IntelliJ IDEA.
+
+Steps:
+
+Open the project in IntelliJ IDEA.
+Make sure all Java classes are present in the same source package/folder.
+Run Main.java.
+The application will display the main menu.
+Select the required option using the menu number.
+Use Save Data before closing the application if changes need to be stored.
+14. ADVANTAGES
+
+The Vehicle Rental System provides the following advantages:
+
+Simple and easy-to-use console interface.
+Efficient management of vehicle information.
+Separate management of customers and rentals.
+Supports multiple vehicle types.
+Demonstrates practical implementation of OOP.
+Provides rental billing functionality.
+Maintains rental history.
+Allows data persistence through text files.
+Uses basic input validation.
+15. LIMITATIONS
+
+The current project is a console-based application, so it does not provide a graphical user interface.
+
+The system also uses text files for data storage instead of a database. Therefore, it is mainly suitable as a simple academic/project implementation rather than a large-scale commercial rental platform.
+
+16. FUTURE SCOPE
+
+The system can be further improved by adding:
+
+Graphical User Interface (GUI).
+Database integration.
+User login and authentication.
+Online vehicle booking.
+Payment integration.
+Automatic email/SMS notifications.
+Advanced search and filtering.
+Admin dashboard.
+Better reporting and analytics.
+
+17. CONCLUSION
+
+The Vehicle Rental System is a Java-based application that provides a simple solution for managing vehicles, customers, rentals, returns, billing, and rental history.
+
+The project successfully demonstrates important Java programming concepts including Object-Oriented Programming, inheritance, polymorphism, composition, ArrayList, file handling, and exception handling.
+
+Through this project, Java concepts can be applied to a practical real-world management problem while maintaining a structured and modular program design.
+
+18. AUTHOR
+
+Shailendra Bhatt
+B.Tech CSE (AI & ML)
+VIT Bhopal
