@@ -97,7 +97,7 @@ Data is loaded when the application starts and can be saved through the applicat
 - **Composition:** `Rental` contains references to `Customer` and `Vehicle`.
 
 ## Author
-**Ankit Nag**
+**Shailendra Bhatt**
 
 B.Tech CSE (AI & ML)  
 VIT Bhopal
